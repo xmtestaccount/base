@@ -14,7 +14,7 @@
         <jdk-version>1.8</jdk-version>
         <maven-compiler-version>3.2</maven-compiler-version>
         <swagger2-version>2.10.0</swagger2-version>
-        <apache.poi.version>4.0.0</apache.poi.version>
+        <apache.poi.version>5.1.0</apache.poi.version>
     </properties>
 
     <parent>
@@ -178,7 +178,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.13</version>
+            <version>8.0.28</version>
         </dependency>
 
         <dependency>
@@ -207,6 +207,7 @@
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
+            <version>2.10.3</version>
         </dependency>
 
         <!--kafka-->
@@ -218,7 +219,6 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>
-            <version>2.6.2</version>
         </dependency>
 
         <!-- swagger -->
@@ -262,6 +262,7 @@
         <dependency>
             <groupId>com.amazonaws</groupId>
             <artifactId>aws-java-sdk-s3</artifactId>
+            <version>1.12.304</version>
         </dependency>
 
         <!--redisson-->
@@ -286,17 +287,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>io.lettuce</groupId>
-                    <artifactId>lettuce-core</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
         </dependency>
 
         <dependency>
@@ -319,7 +309,7 @@
         <dependency>
             <groupId>net.lingala.zip4j</groupId>
             <artifactId>zip4j</artifactId>
-            <version>2.6.3</version>
+            <version>2.7.0</version>
         </dependency>
 
         <!-- fastdfs -->
@@ -422,6 +412,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.6.1</version>
                 <configuration>
                     <includeSystemScope>true</includeSystemScope>
                 </configuration>
